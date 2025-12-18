@@ -110,6 +110,19 @@
             box-sizing: border-box;
         }
 
+        .nav-buttons {
+            display: flex;
+            flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+            gap: 10px; /* Add space between buttons */
+            margin: 20px 0;
+        }
+
+        .nav-buttons .back-link {
+            flex-grow: 1; /* Allow buttons to grow and fill the space */
+            width: auto; /* Override the 100% width */
+            margin: 0; /* Reset margin as gap is used */
+        }
+
         /* Desktop styles */
         @media (min-width: 768px) {
             body {
@@ -128,7 +141,10 @@
 </head>
 <body>
     <div class="container">
-        <a href="index.html" class="back-link">Volver al Reporte</a>
+        <div class="nav-buttons">
+            <a href="index.html" class="back-link">Volver al Reporte</a>
+            <a href="histologia_medula_osea.html" class="back-link">Histología Médula Ósea</a>
+        </div>
 
         <h1>BIOPSIA POR CILINDRO (TINCIONES: H&E, RETICULINA)</h1>
         <p>En la práctica, una biopsia se considera adecuada o diagnóstica cuando cumple con los siguientes criterios:</p>
@@ -295,7 +311,10 @@
             </tbody>
         </table>
         
-        <a href="index.html" class="back-link">Volver al Reporte</a>
+        <div class="nav-buttons">
+            <a href="index.html" class="back-link">Volver al Reporte</a>
+            <a href="histologia_medula_osea.html" class="back-link">Histología Médula Ósea</a>
+        </div>
     </div>
 </body>
 </html>

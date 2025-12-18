@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información Adicional - Reporte de Médula Ósea</title>
+    <style>
+        /* Mobile-first styles */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 15px;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        
+        h1 { font-size: 1.8rem; }
+        h2 { font-size: 1.5rem; }
+        h3 { font-size: 1.2rem; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 14px; /* Keep table font slightly smaller */
+        }
+        
+        /* Force table to not be like tables on small screens */
+        @media (max-width: 767px) {
+            table, thead, tbody, th, td, tr { 
+                display: block; 
+            }
+            
+            thead tr { 
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            
+            tr { border: 1px solid #ccc; }
+            
+            td { 
+                border: none;
+                border-bottom: 1px solid #eee; 
+                position: relative;
+                padding-left: 50%; 
+            }
+            
+            td:before { 
+                position: absolute;
+                top: 6px;
+                left: 6px;
+                width: 45%; 
+                padding-right: 10px; 
+                white-space: nowrap;
+                font-weight: bold;
+            }
+
+            /* Label the data */
+            td:nth-of-type(1):before { content: "Criterio"; }
+            td:nth-of-type(2):before { content: "Descripción"; }
+            td:nth-of-type(3):before { content: "Importancia"; }
+            td:nth-of-type(1):before { content: "Grupo de Edad"; }
+            td:nth-of-type(2):before { content: "Celularidad Normal"; }
+             td:nth-of-type(1):before { content: "Parámetro"; }
+            td:nth-of-type(2):before { content: "Información"; }
+            td:nth-of-type(3):before { content: "Correlación"; }
+             td:nth-of-type(1):before { content: "Anticuerpo"; }
+            td:nth-of-type(2):before { content: "Linaje/Función"; }
+            td:nth-of-type(3):before { content: "Utilidad"; }
+        }
+
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            width: 100%;
+            margin: 20px 0;
+            padding: 12px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /* Desktop styles */
+        @media (min-width: 768px) {
+            body {
+                padding: 20px;
+                font-size: 1em;
+            }
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+            h3 { font-size: 1.4rem; }
+            
+            .back-link {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="REPORTEMEDULAOSEA.html" class="back-link">Volver al Reporte</a>
+
+        <h1>BIOPSIA POR CILINDRO (TINCIONES: H&E, RETICULINA)</h1>
+        <p>En la práctica, una biopsia se considera adecuada o diagnóstica cuando cumple con los siguientes criterios:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Criterio</th>
+                    <th>Descripción</th>
+                    <th>Importancia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Longitud</td>
+                    <td>Al menos 1.5 - 2 cm (en adultos). Es el parámetro más objetivo.</td>
+                    <td>Longitudes menores (&lt;1 cm) son a menudo no diagnósticas, especialmente para evaluar celularidad o infiltrados focales.</td>
+                </tr>
+                <tr>
+                    <td>Integridad Estructural</td>
+                    <td>El cilindro debe estar intacto, sin fragmentarse excesivamente, y debe incluir tanto médula ósea como hueso cortical y trabecular.</td>
+                    <td>Permite evaluar la relación topográfica normal (ej. megacariocitos paratrabeculares) y la integridad del hueso.</td>
+                </tr>
+                <tr>
+                    <td>Preservación Arquitectónica</td>
+                    <td>La arquitectura de la hematopoyesis debe estar bien preservada, sin artefactos por compresión o fijación.</td>
+                    <td>Crítico para diagnosticar trastornos de distribución (ej. fibrosis, infiltración linfoide paratrabecular).</td>
+                </tr>
+                <tr>
+                    <td>Representatividad</td>
+                    <td>Debe ser representativo del aspirado (si se obtuvo) y del cuadro clínico.</td>
+                    <td>Una discrepancia (ej. biopsia hipocelular con aspirado hipercelular) puede indicar un muestreo inadecuado.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>⚠️ Signos de una Biopsia Inadecuada</h3>
+        <ul>
+            <li>Longitud insuficiente (&lt;1 cm en adultos).</li>
+            <li>Fragmentación excesiva que impide evaluar la arquitectura.</li>
+            <li>Solo tejido cortical sin médula, o solo médula sin hueso trabecular adyacente.</li>
+            <li>Artefactos severos (aplastamiento, fijación inadecuada) que imposibilitan la interpretación.</li>
+        </ul>
+
+        <h2>Celularidad</h2>
+        <p>La celularidad de la médula ósea es el porcentaje del espacio medular ocupado por células productoras de sangre (tejido hematopoyético) en relación con la grasa (tejido adiposo). Es un parámetro fundamental en la evaluación histológica de una biopsia de médula ósea.</p>
+        <p>Para responder a tu pregunta previa, una biopsia se considera adecuada para evaluar la celularidad cuando contiene al menos cuatro espacios intertrabeculares (o campos de baja potencia) en la muestra.</p>
+        
+        <h3>📊 Cálculo y valores normales según la edad</h3>
+        <p>La celularidad se estima por microscopía óptica en la biopsia procesada. Su valor "normal" depende principalmente de la edad del paciente. Aquí tienes los puntos de referencia:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Grupo de Edad</th>
+                    <th>Celularidad Normal Esperada</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Menores de 10 años</td><td>Aproximadamente 80%</td></tr>
+                <tr><td>Adultos jóvenes (~30 años)</td><td>Alrededor del 50%</td></tr>
+                <tr><td>Adultos (rango general)</td><td>30% - 60% o 50% - 90% en parámetros citológicos.</td></tr>
+                <tr><td>Adultos mayores (70+ años)</td><td>Puede disminuir a un 30% o menos.</td></tr>
+            </tbody>
+        </table>
+
+        <h3>📈 Hipocellularidad vs. Hipercelularidad</h3>
+        <p>Se consideran los siguientes umbrales generales para calificar una médula como anormal en términos de celularidad:</p>
+        <ul>
+            <li><strong>Médula Hipocelular:</strong> Celularidad menor del 25%. En casos severos, como la anemia aplásica grave, la biopsia puede mostrar menos del 25% de células normales.</li>
+            <li><strong>Médula Hipercelular:</strong> Celularidad mayor del 75%.</li>
+        </ul>
+
+        <h3>🧠 Contexto y Causas de las Alteraciones</h3>
+        <p>La interpretación siempre depende del contexto clínico. Por ejemplo:</p>
+        <ul>
+            <li>Una médula <strong>hipercelular</strong> puede deberse a una reacción compensatoria (como en una anemia hemolítica) o a una neoplasia (como una leucemia o un síndrome mieloproliferativo). En los síndromes mielodisplásicos, la médula suele ser hipercelular a pesar de la citopenia en sangre, debido a hematopoyesis ineficaz.</li>
+            <li>Una médula <strong>hipocelular</strong> puede indicar una anemia aplásica, daño por toxinas, infecciones o simplemente cambios asociados a la edad avanzada.</li>
+        </ul>
+
+        <h3>💎 Conclusión clave</h3>
+        <p>La evaluación de la celularidad medular es un juicio cualitativo fundamentado que integra la estimación microscópica con puntos de corte establecidos, la edad del paciente y su contexto clínico completo. Una muestra adecuada (con al menos 4 espacios intertrabeculares) es esencial para una valoración fiable.</p>
+        
+        <h2>Relación Mieloide/Eritroide (M:E)</h2>
+        <p><strong>Distribución y Topografía:</strong> Las tres series hematopoyéticas se distribuyen de manera adecuada. Los elementos eritroides y mieloides se disponen en islotes y cordones respectivamente, sin evidencia de distribución anómala. Los megacariocitos se localizan de manera preferencial cerca de los sinusoides y en paratrabecular, sin agrupaciones.</p>
+        
+        <h3>¿Dónde y cómo se calcula la relación M:E?</h3>
+        <ul>
+            <li><strong>Muestra utilizada:</strong> Se evalúa en las extensiones (frotis) del aspirado de médula ósea teñidas con Wright-Giemsa o similares.</li>
+            <li><strong>Método de cálculo:</strong> El patólogo o hematólogo cuenta 500 células nucleadas en un área bien teñida y con distribución celular uniforme. Luego, clasifica cada célula según su linaje (mieloide, eritroide, linfoide, etc.) y etapa de maduración.</li>
+            <li><strong>Fórmula:</strong> La relación M:E es el resultado de dividir el número total de células de la serie mieloide (desde mieloblastos hasta neutrófilos) entre el número total de células de la serie eritroide (desde proeritroblastos hasta ortocromáticos).</li>
+        </ul>
+
+        <h3>📊 Interpretación y valores de referencia</h3>
+        <ul>
+            <li><strong>Relación normal:</strong> En un adulto sano, la relación M:E suele estar entre 2:1 y 4:1. Esto significa que hay de 2 a 4 células mieloides por cada célula eritroide.</li>
+            <li><strong>Relación elevada (&gt;4:1):</strong> Sugiere una proliferación mieloide (ej. en infecciones, síndromes mieloproliferativos) o una disminución eritroide (ej. en anemia aplásica, fallo puro de serie roja).</li>
+            <li><strong>Relación disminuida (&lt;2:1):</strong> Indica una proliferación eritroide (ej. en anemias hemolíticas, pérdida de sangre aguda, síndrome mielodisplásico con hiperplasia eritroide) o una disminución mieloide.</li>
+        </ul>
+
+        <h3>🧩 Relación con otros hallazgos del informe</h3>
+        <p>La relación M:E no se interpreta de forma aislada, sino en conjunto con los hallazgos de la biopsia y el contexto clínico:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Parámetro (y muestra de origen)</th>
+                    <th>Información que aporta</th>
+                    <th>Ejemplo de correlación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Relación M:E (Aspirado)</td>
+                    <td>Proporción y dinámica de las dos principales líneas productoras.</td>
+                    <td>Una M:E baja con médula hipercelular en la biopsia sugiere hiperplasia eritroide reactiva.</td>
+                </tr>
+                <tr>
+                    <td>Cellularidad (Biopsia)</td>
+                    <td>Porcentaje total de células vs. grasa en la arquitectura.</td>
+                    <td>Una M:E alta con médula hipocelular sugiere afectación selectiva de la serie roja.</td>
+                </tr>
+                <tr>
+                    <td>Maduración (Aspirado)</td>
+                    <td>Presencia de displasia o bloqueos madurativos.</td>
+                    <td>Una M:E alterada con displasia en ambas series sugiere un síndrome mielodisplásico.</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h3>💎 Conclusión</h3>
+        <p>En resumen, la relación M:E es un dato esencial que se reporta en la parte correspondiente al aspirado medular del informe. Su cálculo proporciona una visión cuantitativa clave del equilibrio entre la producción de glóbulos blancos y rojos, y su alteración es una pieza fundamental para el diagnóstico de numerosos trastornos hematológicos.</p>
+        <p>Para un cuadro completo, siempre se correlaciona con la celularidad y arquitectura evaluadas en la biopsia y con los hallazgos clínicos del paciente.</p>
+        
+        <h2>Otros Hallazgos</h2>
+        <ul>
+            <li><strong>Tinción de Reticulina (Gomori):</strong> Grado 0 (ausente) a 1 (focal, muy leve). No hay evidencia de fibrosis medular (mielofibrosis).</li>
+            <li><strong>Hueso:</strong> La relación hueso/espacio medular es normal. No hay osteoesclerosis ni osteólisis.</li>
+        </ul>
+
+        <h2>TINCIONES ESPECIALES E HISTOQUÍMICA</h2>
+        <ul>
+            <li><strong>Hierro (Perls) en biopsia:</strong> Depósitos de hemosiderina presentes en macrófagos, en cantidad adecuada.</li>
+        </ul>
+        
+        <h2>DIAGNÓSTICO</h2>
+        <p>MÉDULA ÓSEA NORMOCELULAR CON HEMATOPOYESIS TRILINEAL NORMAL Y DEPÓSITOS ADECUADOS DE HIERRO.</p>
+        
+        <h2>PANEL DE INMUNOHISTOQUÍMICA DE PRIMERA LÍNEA (SCREENING)</h2>
+        <p>No existe un panel único universal, ya que la selección se guía por la morfología y la sospecha clínica. Sin embargo, en un caso con infiltrado atípico de etiología indeterminada, iniciamos con un panel básico que evalúa los linajes principales y el estadio de maduración.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Anticuerpo</th>
+                    <th>Linaje / Función</th>
+                    <th>Utilidad Principal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>CD34</td><td>Células progenitoras hematopoyéticas / blastos</td><td>Cuantificación de blastos. Marcador clave para leucemias agudas y síndromes mielodisplásicos.</td></tr>
+                <tr><td>CD117 (c-KIT)</td><td>Células progenitoras mieloides, mastocitos.</td><td>Identificación de blastos mieloides y proliferación de mastocitos. Más específico mieloide que CD34.</td></tr>
+                <tr><td>MPO (Mieloperoxidasa)</td><td>Granulocitos (serie mieloide).</td><td>Marcador linaje-específico mieloide definitivo. Confirma leucemia mieloide aguda (LMA).</td></tr>
+                <tr><td>CD3</td><td>Linfocitos T.</td><td>Evalúa distribución y arquitectura de población T. Infiltrados paratrabeculares o nodulares sugieren linfoma.</td></tr>
+                <tr><td>CD20</td><td>Linfocitos B.</td><td>Identifica población B. Agregados o un patrón difuso anormal sugiere linfoma B.</td></tr>
+                <tr><td>CD138 / Syndecan-1</td><td>Células plasmáticas.</td><td>Cuantifica y evalúa la atipia de células plasmáticas. Esencial para diagnóstico de mieloma.</td></tr>
+                <tr><td>Glycophorin A / CD71</td><td>Serie eritroide.</td><td>Evalúa la maduración eritroide e identifica proliferaciones eritroides anormales (e.g., leucemia eritroide aguda).</td></tr>
+                <tr><td>CD61 / Factor VIII</td><td>Megacariocitos.</td><td>Evalúa número, distribución y atipia (micromegacariocitos). Clave para síndromes mieloproliferativos y MDS.</td></tr>
+            </tbody>
+        </table>
+        
+        <a href="REPORTEMEDULAOSEA.html" class="back-link">Volver al Reporte</a>
+    </div>
+</body>
+</html>
